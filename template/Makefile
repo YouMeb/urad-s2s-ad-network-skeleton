@@ -6,7 +6,7 @@ TEST_SRC := ./test/*.js
 
 include dependencies.mk
 
-test: eslint
+test:
 	@$(MOCHA) $(TEST_SRC)
 
 .PHONY: test
